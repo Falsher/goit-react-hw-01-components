@@ -1,0 +1,18 @@
+.statistics {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  background-color: rgb(255, 247, 238);
+  text-align: center;
+}
+.stat-list {
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+  padding: 0px;
+}
+
+.item {
+  width: 150px;
+  text-align: center;
+}
