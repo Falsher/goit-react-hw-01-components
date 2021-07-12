@@ -1,7 +1,10 @@
 .items {
-  color: red;
   list-style-type: none;
-}
-.name {
-  color: black;
+  width: 300px;
+  margin: 0px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  font-size: 25px;
 }

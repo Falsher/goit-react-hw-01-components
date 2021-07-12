@@ -1,0 +1,7 @@
+.transaction-history {
+  background-color: aqua;
+}
+.transaction-history th,
+.transaction-history tbody td {
+  border: 1px solid black;
+}

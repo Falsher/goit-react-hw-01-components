@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import './transaction.css';
 const TransactionList = ({ type, amount, currency }) => (
   <tr>
     <td>{type}</td>
