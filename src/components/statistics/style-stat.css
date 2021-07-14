@@ -1,7 +1,7 @@
 .statistics {
   margin-left: auto;
   margin-right: auto;
-  width: 600px;
+  width: 500px;
   background-color: rgb(255, 247, 238);
   text-align: center;
 }
@@ -13,6 +13,9 @@
 }
 
 .item {
-  width: 150px;
+  width: 100px;
   text-align: center;
+}
+.stat-list .item .label {
+  width: 100px;
 }

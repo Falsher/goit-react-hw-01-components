@@ -22,42 +22,11 @@ const App = () => {
         likes={user.stats.likes}
       />
 
-      <Statistical
-        labelOne={statistics[0].label}
-        percentageOne={statistics[0].percentage}
-        labelTwo={statistics[1].label}
-        percentageTwo={statistics[1].percentage}
-        labelThree={statistics[2].label}
-        percentageThree={statistics[2].percentage}
-        labelFor={statistics[3].label}
-        percentageFor={statistics[3].percentage}
-      />
-      {friends.map(friend => (
-        <FriendsList
-          avatar={friend.avatar}
-          name={friend.name}
-          isOnline={friend.isOnline}
-        />
-      ))}
-      <table class="transaction-history">
-        <thead>
-          <tr>
-            <th>Type</th>
-            <th>Amount</th>
-            <th>Currency</th>
-          </tr>
-        </thead>
+      <Statistical statisticalData={statistics} />
 
-        <tbody>
-          {transactions.map(transaction => (
-            <TransactionList
-              type={transaction.type}
-              amount={transaction.amount}
-              currency={transaction.currency}
-            />
-          ))}
-        </tbody>
-      </table>
+      <FriendsList friendsListData={friends} />
+
+      <TransactionList transactionData={transactions} />
     </div>
   );
 };
