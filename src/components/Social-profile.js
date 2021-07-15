@@ -1,15 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './style-social.css';
-const SocialProfile = ({
-  avatar,
-  name,
-  tag,
-  location,
-  followers,
-  views,
-  likes,
-}) => (
+const SocialProfile = ({ avatar, name, tag, location, stats }) => (
   <div class="profile">
     <div class="description">
       <img src={avatar} alt={name} class="avatar" width="150" />
@@ -21,15 +13,15 @@ const SocialProfile = ({
     <ul class="stats">
       <li>
         <span class="label">Followers</span>
-        <span class="quantity">{followers}</span>
+        <span class="quantity">{stats.followers}</span>
       </li>
       <li>
         <span class="label">Views</span>
-        <span class="quantity">{views}</span>
+        <span class="quantity">{stats.views}</span>
       </li>
       <li>
         <span class="label">Likes</span>
-        <span class="quantity">{likes}</span>
+        <span class="quantity">{stats.likes}</span>
       </li>
     </ul>
   </div>
