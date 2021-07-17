@@ -18,6 +18,7 @@ const Statistical = ({ statisticalData, title }) => {
   );
 };
 Statistical.propTypes = {
+  title: PropTypes.isRequired,
   statisticalData: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string.isRequired,
