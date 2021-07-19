@@ -4,7 +4,7 @@ import './style-stat.css';
 const Statistical = ({ statisticalData, title }) => {
   return (
     <section class="statistics">
-      <h2 class="title">{title}</h2>
+      {title && <h2>{title}</h2>}
 
       <ul class="stat-list">
         {statisticalData.map(({ label, percentage }) => (
